@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>Welcome To Task Management System</h1>
+        <h2>Please add your task by writing below !!!!</h2>
+        <section id = "submit" class="submit">
+            <div class="row">
+                <input type="text" id="task">
+                <button onclick="putTask()" id="addTask">Submit</button>
+            </div>
+            <div id = "tasks">
+                
+            </div>
+            
+        </section>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#config-web-app -->
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBXS-6-W_9zKAOl7JV0uMqRwt20tdRp9fE",
+            authDomain: "the-great-project-d8ea7.firebaseapp.com",
+            databaseURL: "https://the-great-project-d8ea7.firebaseio.com",
+            projectId: "the-great-project-d8ea7",
+            storageBucket: "",
+            messagingSenderId: "158609843334",
+            appId: "1:158609843334:web:9de4dad9eb06bb03"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        </script>
+    </body>
+</html>
